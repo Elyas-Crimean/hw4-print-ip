@@ -6,7 +6,7 @@ else()
 SET(VERSION_PATCH "999")
 endif()
 
-project(allocator VERSION 1.0.${VERSION_PATCH})
+project(print_ip VERSION 1.0.${VERSION_PATCH})
 
 #configure_file(version.h.in version.h)
 add_executable(print_ip print_ip.cpp)

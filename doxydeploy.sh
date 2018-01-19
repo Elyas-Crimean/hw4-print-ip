@@ -1,4 +1,5 @@
 #!/bin/sh
+set -x
 
 GH_REPO_REF=github.com/Elyas-Crimean/hw4-print-ip
 GH_REPO_NAME=hw4-print-ip

@@ -2,6 +2,16 @@ branches:
   only:
     - master
 language: cpp
+
+addons:
+  apt:
+    packages:
+      - doxygen
+      - doxygen-doc
+      - doxygen-latex
+      - doxygen-gui
+      - graphviz
+
 addons:
   apt:
     sources: [ 'ubuntu-toolchain-r-test' ]

@@ -9,7 +9,7 @@ endif()
 project(allocator VERSION 1.0.${VERSION_PATCH})
 
 #configure_file(version.h.in version.h)
-add_executable(allocator allocator.cpp)
+add_executable(print_ip print_ip.cpp)
 #add_executable(test_version test.cpp)
 #add_library(versions lib.cpp)
 

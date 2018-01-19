@@ -24,6 +24,6 @@ deploy:
 #  provider: script
 #  skip-cleanup: true
 after_success:
-  - cd $TRAVIS_BUID_DIR
+  - cd $TRAVIS_BUILD_DIR
   - chmod +x doxydeploy.sh
   - ./doxydeploy.sh

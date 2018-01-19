@@ -9,7 +9,7 @@
 
 /// Реализация для целых типов
 template<typename T>
-std::enable_if<std::is_integral<T>::value> print_ip(T ip, std::ostream &s = std::cout, bool eol = true) //void print_ip()
+std::enable_if_t<std::is_integral<T>::value> print_ip(T ip, std::ostream &s = std::cout, bool eol = true) //void print_ip()
 {
     static_assert(std::numeric_limits<T>::digits >= 7,"Bool not supported.");
     static const int N = (std::numeric_limits<T>::digits+1)/8;
@@ -54,7 +54,7 @@ struct is_container<
 
 /// Реализация для контейнерных типов
 template<typename T>
-std::enable_if<is_container<T>::value> print_ip(T &ip, std::ostream &s = std::cout, bool eol = true)
+std::enable_if_t<is_container<T>::value> print_ip(T &ip, std::ostream &s = std::cout, bool eol = true)
 {
     bool dot_skip = true;
     for(auto ip_part : ip) {

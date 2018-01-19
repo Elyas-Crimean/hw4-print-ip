@@ -5,7 +5,10 @@ language: cpp
 addons:
   apt:
     sources: [ 'ubuntu-toolchain-r-test' ]
-    packages: [ 'libstdc++-4.9-dev' ]
+    packages: 
+            - libstdc++-6-dev
+            - g++-6
+#[ 'libstdc++-4.9-dev' ]
 
 #compiler: clang
 
